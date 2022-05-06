@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +7,157 @@
   <title>Document</title>
 </head>
 <body>
-
+  <header class="page-header">
+    <img src="img/logo.png" alt="">
+    <nav class="page-header__nav">
+      <ul class="page-header__list">
+        <li>
+          <a href="">О нас</a>
+        </li>
+        <li>
+          <a href="">Наши работы</a>
+        </li>
+        <li>
+          <a href="">Отзывы</a>
+        </li>
+        <li>
+          <a href="">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="promo">
+      <h1 class="promo__title">
+        Ремонт технологического оборудования
+      </h1>
+      <p>Мы команда профессионалов в области ремонта и наладки оборудования
+        для общественного питания и торгового объектов.
+      </p>
+      <p>Обращаясь к нам, вы получаете качественный сервис нацеленный на результат.
+        Мы предлагаем широкий спектр услуг по ремонту технологического оборудования.
+      </p>
+      <p>Обращаясь к нам, вы будете спокойны за свой бизнес.
+        Мы ремонтируем, а не советуем что делать.
+      </p>
+      <img src="img/promo.jpg" alt="">
+      <button type="submit">Оставить заявку</button>
+    </section>
+    <section class="description">
+      <h2>Описание технологического ремонта</h2>
+      <dl class="description__list">
+        <dt class="description__term">
+          Рестораны
+          <img src="img/restaurant.jpg" alt="">
+        </dt>
+        <dd class="description__definition">Устранение проблем с пароконвек-томатами Rational, Abat, Convotherm и другими.
+          Ремонт индукционных плит, рисоварок и печей для пиццы. Техническое обслуживание всей линии оборудования.
+        </dd>
+        <dt class="description__term">Пекарни и кафе
+          <img src="img/cafe.jpg" alt="">
+        </dt>
+        <dd class="description__definition">Ремонт охлаждаемых кондитерских витрин. Наладка планетарных миксеров и тестомесов.
+          Обслуживание конвекцион-ных печей Unox и других. Холодильные камеры и кондиционирование.
+        </dd>
+        <dt class="description__term">Торговые объекты
+          <img src="img/trade-object.jpg" alt="">
+        </dt>
+        <dd class="description__definition">Централизованное холодоснабжение и встроенный холод.
+          Устранение проблем хлебопекарных ротационных печей. Монтаж и демонтаж витрин.
+          Мувинг торговых сетей с полным пере-подключением оборудования.
+        </dd>
+      </dl>
+    </section>
+    <section class="consultation">
+      <h2>Закажите бесплатную консультацию</h2>
+      <p>Возникли проблемы с оборудованием?</p>
+      <p>Нужна консультация специалиста?</p>
+      <p>Оставьте информацию и мы Вам перезвоним.</p>
+      <form action="" method="post">
+        <label for="type"></label>
+        <select name="type" id="type">
+          <option value="volvo">Тип оборудования</option>
+          <option value="volvo">Volvo</option>
+          <option value="dfgh">dfgh</option>
+          <option value="dfhgj">dfhgj</option>
+        </select>
+        <label class="visually-hidden" for="name">Введите ваше имя</label>
+        <input type="name" minlength="1" maxlength="100" required placeholder="Ваше имя">
+        <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
+        <input type="tel" name="tel" id="tel" maxlength="11" minlength="11" pattern="\+?[0-9\s\-\(\)]+" placeholder="Введите Ваш номер телефона"
+        aria-label="Поле для ввода Вашего номера телефона" required>
+        <button type="submit">Перезвоните мне</button>
+      </form>
+    </section>
+    <section class="clients">
+      <h2>Наши клиенты</h2>
+      <ul class="clients__list">
+        <li>
+          <img src="img/samsung-logo.png" alt="">
+        </li>
+        <li>
+          <img src="img/bosch-logo.png" alt="">
+        </li>
+        <li>
+          <img src="img/lg_electronics-Logo.png" alt="">
+        </li>
+        <li>
+          <img src="img/liebherr-logo.png" alt="">
+        </li>
+        <li>
+          <img src="img/bosch-logo.png" alt="">
+        </li>
+        <li>
+          <img src="img/liebherr-logo.png" alt="">
+        </li>
+        <li>
+          <img src="img/bosch-logo.png" alt="">
+        </li>
+        <li>
+          <img src="img/samsung-logo.png" alt="">
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__address">
+      <span>Адрес</span>
+      <a href="">
+        ул. Советская, 133 В, к. 15
+        г. Гомель, Беларусь
+      </a>
+    </div>
+    <div class="page-footer__tel">
+      <span>Телефоны</span>
+      <ul>
+        <li>
+          <a href="tel:+375291362874">+375 29 1362874</a>
+        </li>
+        <li>
+          <a href="tel:+375447573419">+375 44 7573419</a>
+        </li>
+      </ul>
+    </div>
+    <div class="page-footer__social">
+      <span>Мы в соцсетях</span>
+      <ul>
+        <li>
+          <a href="">Вконтакте</a>
+        </li>
+        <li>
+          <a href="">Facebook</a>
+        </li>
+        <li>
+          <a href="">Instagram</a>
+        </li>
+      </ul>
+    </div>
+    <p>
+      Обслуживание и ремонт технологического
+      оборудования ресторанов, пекарен, торгового и
+      производственного холодильного оборудования
+      в городе Гомеле и Республике Беларусь
+    </p>
+  </footer>
 </body>
 </html>

@@ -1,8 +1,14 @@
-.description__list {
-  margin: 0;
+.description {
+  padding-top: 50px;
 }
 
-.description__term {
+.description ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.description__subtitle {
   font-weight: 700;
   font-size: 34px;
   line-height: 140.62%;
@@ -10,7 +16,7 @@
   color: rgba($basic-black, 0.87);
 }
 
-.description__definition {
+.description__text {
   margin: 0;
   line-height: 22.4px;
   letter-spacing: 0.44px;

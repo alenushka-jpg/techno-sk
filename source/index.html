@@ -47,7 +47,7 @@
       <button type="submit">Оставить заявку</button>
     </section>
     <section class="description container">
-      <h2>Описание технологического ремонта</h2>
+      <h2 class="visually-hidden">Описание технологического ремонта</h2>
       <dl class="description__list">
         <dt class="description__term">
           Рестораны
@@ -71,26 +71,27 @@
         </dd>
       </dl>
     </section>
-    <section class="consultation container">
-      <h2>Закажите бесплатную консультацию</h2>
-      <p>Возникли проблемы с оборудованием?</p>
-      <p>Нужна консультация специалиста?</p>
-      <p>Оставьте информацию и мы Вам перезвоним.</p>
-      <form action="" method="post">
-        <label for="type"></label>
-        <select name="type" id="type">
-          <option value="volvo">Тип оборудования</option>
-          <option value="volvo">Volvo</option>
-          <option value="dfgh">dfgh</option>
-          <option value="dfhgj">dfhgj</option>
-        </select>
-        <label class="visually-hidden" for="name">Введите ваше имя</label>
-        <input type="name" minlength="1" maxlength="100" required placeholder="Ваше имя">
-        <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
-        <input type="tel" name="tel" id="tel" maxlength="11" minlength="11" pattern="\+?[0-9\s\-\(\)]+" placeholder="Введите Ваш номер телефона"
-        aria-label="Поле для ввода Вашего номера телефона" required>
-        <button type="submit">Перезвоните мне</button>
-      </form>
+    <section class="consultation">
+      <div class="consultation__container container">
+        <h2>Закажите бесплатную консультацию</h2>
+        <p>Возникли проблемы с оборудованием?</p>
+        <p>Нужна консультация специалиста?</p>
+        <p>Оставьте информацию и мы Вам перезвоним.</p>
+        <form class="consultation__form" action="" method="post">
+          <label for="type"></label>
+          <select name="type" id="type">
+            <option value="" hidden disabled selected>Тип оборудования</option>
+            <option value="volvo">Volvo</option>
+            <option value="dfgh">dfgh</option>
+            <option value="dfhgj">dfhgj</option>
+          </select>
+          <label class="visually-hidden" for="name">Введите ваше имя</label>
+          <input type="name" minlength="1" maxlength="100" placeholder="Ваше имя" required>
+          <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
+          <input type="tel" name="tel" id="tel" maxlength="11" minlength="11" pattern="\+?[0-9\s\-\(\)]+" placeholder="Ваш телефонный номер" required>
+          <button type="submit">Перезвоните мне</button>
+        </form>
+      </div>
     </section>
     <section class="clients container">
       <h2>Наши клиенты</h2>
@@ -102,7 +103,7 @@
           <img src="img/bosch-logo.png" alt="">
         </li>
         <li>
-          <img src="img/lg_electronics-Logo.png" alt="">
+          <img src="img/lg_electronics-logo.png" alt="">
         </li>
         <li>
           <img src="img/liebherr-logo.png" alt="">
@@ -122,45 +123,47 @@
       </ul>
     </section>
   </main>
-  <footer class="page-footer container">
-    <div class="page-footer__address">
-      <span>Адрес</span>
-      <a href="">
-        ул. Советская, 133 В, к. 15
-        г. Гомель, Беларусь
-      </a>
+  <footer class="page-footer">
+    <div class="page-footer__container container">
+      <div class="page-footer__address">
+        <span class="page-footer__subtitle">Адрес</span>
+        <a href="">
+          ул. Советская, 133 В, к. 15
+          г. Гомель, Беларусь
+        </a>
+      </div>
+      <div class="page-footer__tel">
+        <span class="page-footer__subtitle">Телефоны</span>
+        <ul>
+          <li>
+            <a href="tel:+375291362874">+375 29 1362874</a>
+          </li>
+          <li>
+            <a href="tel:+375447573419">+375 44 7573419</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__social">
+        <span class="page-footer__subtitle">Мы в соцсетях</span>
+        <ul>
+          <li>
+            <a href="">Вконтакте</a>
+          </li>
+          <li>
+            <a href="">Facebook</a>
+          </li>
+          <li>
+            <a href="">Instagram</a>
+          </li>
+        </ul>
+      </div>
+      <p class="page-footer__text">
+        Обслуживание и ремонт технологического
+        оборудования ресторанов, пекарен, торгового и
+        производственного холодильного оборудования
+        в городе Гомеле и Республике Беларусь
+      </p>
     </div>
-    <div class="page-footer__tel">
-      <span>Телефоны</span>
-      <ul>
-        <li>
-          <a href="tel:+375291362874">+375 29 1362874</a>
-        </li>
-        <li>
-          <a href="tel:+375447573419">+375 44 7573419</a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__social">
-      <span>Мы в соцсетях</span>
-      <ul>
-        <li>
-          <a href="">Вконтакте</a>
-        </li>
-        <li>
-          <a href="">Facebook</a>
-        </li>
-        <li>
-          <a href="">Instagram</a>
-        </li>
-      </ul>
-    </div>
-    <p>
-      Обслуживание и ремонт технологического
-      оборудования ресторанов, пекарен, торгового и
-      производственного холодильного оборудования
-      в городе Гомеле и Республике Беларусь
-    </p>
   </footer>
 </body>
 </html>

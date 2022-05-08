@@ -1,0 +1,18 @@
+.description__list {
+  margin: 0;
+}
+
+.description__term {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 140.62%;
+  letter-spacing: 0.25px;
+  color: rgba($basic-black, 0.87);
+}
+
+.description__definition {
+  margin: 0;
+  line-height: 22.4px;
+  letter-spacing: 0.44px;
+  color: rgba($basic-black, 0.87);
+}

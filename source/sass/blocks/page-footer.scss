@@ -1,0 +1,31 @@
+.page-footer {
+  background-color: $basic-grey;
+}
+
+.page-footer ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-footer__subtitle,
+.page-footer a,
+.page-footer__text {
+  font-size: 16px;
+  line-height: 16px;
+  color: $basic-white;
+}
+
+.page-footer__subtitle {
+  font-weight: 700;
+  letter-spacing: 0.44px;
+}
+
+.page-footer a {
+  letter-spacing: 0.44px;
+  text-decoration: none;
+}
+
+.page-footer__text {
+  margin: 0;
+}

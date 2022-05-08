@@ -8,15 +8,10 @@ body {
 
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 body {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  font-family: "PT Mono", "Courier New", monospace;
+  font-family: $main-font;
   font-size: 16px;
   font-weight: 400;
 }
@@ -25,6 +20,38 @@ body {
 *::after,
 *::before {
   box-sizing: inherit;
+}
+
+img {
+  display: block;
+}
+
+button {
+  display: inline-block;
+  padding: 17px 54px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  font-family: $main-font;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: $basic-white;
+  background-color: $color-button;
+  border: none;
+  border-radius: 9px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .container {

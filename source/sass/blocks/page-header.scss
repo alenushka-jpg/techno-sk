@@ -1,3 +1,18 @@
 .page-header {
   width: 100%;
 }
+
+.page-header__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page-header__list a {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  text-decoration: none;
+  letter-spacing: 0.44px;
+  color: #434242;
+}

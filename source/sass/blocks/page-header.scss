@@ -1,18 +1,40 @@
 .page-header {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
+  padding-top: 110px;
+  padding-bottom: 50px;
 }
 
 .page-header__list {
+  display: flex;
+  // justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.page-header__list li {
+  margin-right: 25px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
 .page-header__list a {
+  display: block;
   font-weight: 700;
   font-size: 24px;
   line-height: 24px;
   text-decoration: none;
   letter-spacing: 0.44px;
-  color: #434242;
+  color: $basic-grey;
+}
+
+.page-header__nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 554px;
 }

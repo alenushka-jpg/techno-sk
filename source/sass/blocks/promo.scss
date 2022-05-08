@@ -1,4 +1,12 @@
+.promo {
+  display: grid;
+  grid-template-columns: 1fr 717px;
+  column-gap: 40px;
+  padding-top: 30px;
+}
+
 .promo__title {
+  grid-column: 1/2;
   margin: 0;
   font-size: 36px;
   line-height: 100%;
@@ -6,10 +14,21 @@
 }
 
 .promo p {
+  grid-column: 1/2;
   margin: 0;
   font-size: 16px;
   line-height: 24px;
   color: $basic-grey;
+}
+
+.promo__img {
+  grid-column: 2/3;
+  grid-row: 1/6;
+}
+
+.promo button {
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
 .promo img {

@@ -3,12 +3,18 @@
 }
 
 .description ul {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .description__subtitle {
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding-top: 28px;
+  text-align: center;
   font-weight: 700;
   font-size: 34px;
   line-height: 140.62%;
@@ -18,7 +24,9 @@
 
 .description__text {
   margin: 0;
+  width: 340px;
   line-height: 22.4px;
   letter-spacing: 0.44px;
+  text-align: justify;
   color: rgba($basic-black, 0.87);
 }

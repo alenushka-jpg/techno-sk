@@ -1,13 +1,13 @@
 .clients {
-  padding-top: 41px;
-  padding-bottom: 60px;
+  padding-top: 44px;
+  padding-bottom: 49px;
 }
 
 .clients h2 {
-  margin: 0 0 31px;
+  margin: 0 0 23px;
   font-size: 34px;
-  line-height: 140.62%;
-  letter-spacing: 0.25px;
+  line-height: 47.8px;
+  letter-spacing: -1.75px;
   color: $basic-grey;
   text-align: center;
 }
@@ -17,7 +17,8 @@
   overflow: hidden;
   align-items: center;
   margin: 0;
-  padding: 0;
+  padding-left: 15px;
+  padding-right: 15px;
   list-style: none;
 }
 

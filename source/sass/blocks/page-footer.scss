@@ -2,6 +2,14 @@
   background-color: $basic-grey;
 }
 
+.page-footer__container {
+  display: grid;
+  grid-template-columns: max-content max-content max-content 508px;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 .page-footer ul {
   margin: 0;
   padding: 0;
@@ -17,6 +25,7 @@
 }
 
 .page-footer__subtitle {
+  display: block;
   font-weight: 700;
   letter-spacing: 0.44px;
 }

@@ -4,9 +4,9 @@
 
 .page-footer__container {
   display: grid;
-  grid-template-columns: max-content max-content max-content 508px;
-  justify-content: space-between;
-  padding-top: 50px;
+  grid-template-columns: max-content max-content max-content 430px;
+  column-gap: 53px;
+  padding-top: 48px;
   padding-bottom: 50px;
 }
 
@@ -14,6 +14,14 @@
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.page-footer__tel {
+  padding-right: 67px;
+}
+
+.page-footer__social {
+  padding-right: 148px
 }
 
 .page-footer__subtitle,
@@ -26,15 +34,23 @@
 
 .page-footer__subtitle {
   display: block;
+  font-size: 13px;
+  line-height: 14px;
   font-weight: 700;
   letter-spacing: 0.44px;
 }
 
 .page-footer a {
+  font-size: 12px;
+  line-height: 16px;
   letter-spacing: 0.44px;
   text-decoration: none;
 }
 
 .page-footer__text {
   margin: 0;
+  padding-right: 16px;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: end;
 }

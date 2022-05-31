@@ -4,6 +4,10 @@
   width: 100%;
   padding-top: 110px;
   padding-bottom: 50px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 20px;
+  }
 }
 
 .page-header__list {
@@ -29,6 +33,10 @@
   text-decoration: none;
   letter-spacing: 0.44px;
   color: $basic-grey;
+
+  @media (max-width: $tablet-width) {
+    font-size: 16px;
+  }
 }
 
 .page-header__nav {

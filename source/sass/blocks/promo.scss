@@ -4,6 +4,10 @@
   column-gap: 65px;
   padding-top: 44px;
   letter-spacing: -0.95px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 20px;
+  }
 }
 
 .promo__title {
@@ -12,6 +16,10 @@
   font-size: 36px;
   line-height: 100%;
   color: $basic-grey;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+  }
 }
 
 .promo p {
@@ -20,12 +28,24 @@
   font-size: 17px;
   line-height: 24px;
   color: $basic-grey;
+
+  @media (max-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 
 .promo__img {
   grid-column: 2/3;
   grid-row: 1/6;
   padding-top: 5px;
+}
+
+.promo__img img {
+  @media (max-width: $tablet-width) {
+    width: 372px;
+    height: 248px;
+  }
 }
 
 .promo button {

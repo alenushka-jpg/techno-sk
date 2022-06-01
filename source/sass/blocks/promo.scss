@@ -6,6 +6,7 @@
   letter-spacing: -0.95px;
 
   @media (max-width: $tablet-width) {
+    grid-template-columns: 1fr 372px;
     padding-top: 20px;
   }
 }

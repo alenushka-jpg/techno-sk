@@ -8,6 +8,10 @@
   column-gap: 53px;
   padding-top: 48px;
   padding-bottom: 50px;
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .page-footer ul {

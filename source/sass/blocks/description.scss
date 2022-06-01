@@ -11,6 +11,13 @@
   list-style: none;
 }
 
+.description img {
+  @media (max-width: $tablet-width) {
+    width: 200px;
+    height: 105px;
+  }
+}
+
 .description__subtitle {
   margin-top: 0;
   margin-bottom: 25px;
@@ -21,6 +28,10 @@
   line-height: 140.62%;
   letter-spacing: 0.25px;
   color: rgba($basic-black, 0.87);
+
+  @media (max-width: $tablet-width) {
+    font-size: 20px;
+  }
 }
 
 .description__text {
@@ -30,4 +41,10 @@
   letter-spacing: 0.44px;
   text-align: justify;
   color: rgba($basic-black, 0.87);
+
+  @media (max-width: $tablet-width) {
+    width: 211px;
+    font-size: 14px;
+    line-height: 140%;
+  }
 }

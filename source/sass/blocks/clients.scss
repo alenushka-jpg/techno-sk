@@ -10,6 +10,11 @@
   letter-spacing: -1.75px;
   color: $basic-grey;
   text-align: center;
+
+  @media (max-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 140.62%;
+  }
 }
 
 .clients__list {
@@ -20,6 +25,11 @@
   padding-left: 15px;
   padding-right: 15px;
   list-style: none;
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .clients__list li {
@@ -27,5 +37,9 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-right: 88px;
   }
 }

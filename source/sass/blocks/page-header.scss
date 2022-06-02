@@ -10,6 +10,11 @@
   }
 }
 
+.page-header img {
+  width: 250px;
+  height: 46px;
+}
+
 .page-header__list {
   display: flex;
   margin: 0;
@@ -22,6 +27,10 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  @media (max-width: $tablet-width) {
+    margin-right: 15px;
   }
 }
 

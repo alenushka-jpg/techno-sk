@@ -13,6 +13,10 @@
   column-gap: 100px;
   padding: 54px 254px 50px 272px;
   letter-spacing: -0.95px;
+
+  @media (max-width: $tablet-width) {
+    padding: 54px 40px 50px;
+  }
 }
 
 .consultation h2 {

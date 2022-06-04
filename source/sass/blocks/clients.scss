@@ -30,6 +30,10 @@
     padding-left: 0;
     padding-right: 0;
   }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 55px;
+  }
 }
 
 .clients__list li {

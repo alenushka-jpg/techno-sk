@@ -66,4 +66,10 @@ button {
     padding-left: 40px;
     padding-right: 40px;
   }
+
+  @media (max-width: $mobile-width) {
+    max-width: 375px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }

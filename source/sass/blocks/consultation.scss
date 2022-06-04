@@ -5,6 +5,15 @@
   background-repeat: no-repeat;
   background-color: $color-light-bg;
   background-size: 1440px 340px;
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/consultation-bg-tablet.png");
+    background-size: auto;
+  }
+
+  @media (max-width: $tablet-width) {
+    background-image: url("../img/consultation-bg-mobile.png");
+  }
 }
 
 .consultation__container {
@@ -16,6 +25,11 @@
 
   @media (max-width: $tablet-width) {
     padding: 54px 40px 50px;
+  }
+
+  @media (max-width: $mobile-width) {
+    grid-template-columns: 1fr;
+    padding: 20px 40px;
   }
 }
 
@@ -33,6 +47,12 @@
     line-height: 25px;
     letter-spacing: 0.25px;
   }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 10px;
+    line-height: 30px;
+    text-align: center;
+  }
 }
 
 .consultation p {
@@ -42,11 +62,23 @@
   letter-spacing: -0.58px;
   line-height: 24px;
   color: $basic-grey;
+
+  @media (max-width: $mobile-width) {
+    text-align: center;
+    padding: 0 10px;
+    margin-bottom: 15px;
+  }
 }
 
 .consultation__form {
   grid-column: 2/3;
   grid-row: 1/5;
+
+  @media (max-width: $mobile-width) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    text-align: center;
+  }
 }
 
 .consultation__form select,

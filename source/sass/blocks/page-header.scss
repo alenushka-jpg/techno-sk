@@ -7,12 +7,22 @@
 
   @media (max-width: $tablet-width) {
     padding-top: 20px;
+    padding-bottom: 34px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-bottom: 28px;
   }
 }
 
 .page-header img {
   width: 250px;
   height: 46px;
+
+  @media (max-width: $mobile-width) {
+    width: 170px;
+    height: 31.38px;
+  }
 }
 
 .page-header__list {
@@ -53,4 +63,8 @@
   align-items: center;
   flex-wrap: wrap;
   max-width: 554px;
+
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
 }

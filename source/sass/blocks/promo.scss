@@ -19,7 +19,7 @@
 
 .promo__title {
   grid-column: 1/2;
-  margin: 0 100px 0 0;
+  margin: 0 100px 6px 0;
   font-size: 36px;
   line-height: 100%;
   color: $basic-grey;
@@ -40,7 +40,7 @@
 .promo p {
   grid-column: 1/2;
   margin: 0;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 24px;
   color: $basic-grey;
 
@@ -89,8 +89,10 @@
 .promo button {
   padding-top: 6px;
   padding-bottom: 6px;
-  margin-top: 14px;
-  margin-bottom: 17px;
+  padding-left: 50px;
+  margin-top: 19px;
+  margin-bottom: 19px;
+  filter: drop-shadow(0 4px 20px rgba($basic-black, 0.15));
 
   @media (max-width: $tablet-width) {
     padding: 17px 52px;

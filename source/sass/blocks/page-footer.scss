@@ -35,11 +35,8 @@
 }
 
 .page-footer__social {
-  padding-right: 148px;
-
   @media (max-width: $tablet-width) {
     grid-column: 1/2;
-    padding-right: 0;
   }
 }
 

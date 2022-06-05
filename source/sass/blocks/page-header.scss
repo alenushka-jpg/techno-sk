@@ -15,13 +15,18 @@
   }
 }
 
-.page-header img {
-  width: 250px;
-  height: 46px;
+.page-header svg {
+  width: 333px;
+  height: 61px;
+
+  @media (max-width: $tablet-width) {
+    width: 250px;
+    height: 46px;
+  }
 
   @media (max-width: $mobile-width) {
     width: 170px;
-    height: 31.38px;
+    height: 31px;
   }
 }
 

@@ -15,7 +15,20 @@
   }
 }
 
-.page-header svg {
+.page-header__top {
+  @media (max-width: $mobile-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.page-header__logo {
+  display: block;
+}
+
+.page-header__logo svg {
   width: 333px;
   height: 61px;
 
@@ -27,6 +40,17 @@
   @media (max-width: $mobile-width) {
     width: 170px;
     height: 31px;
+  }
+}
+
+.page-header__burger {
+  display: none;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+
+  @media (max-width: $mobile-width) {
+    display: flex;
   }
 }
 

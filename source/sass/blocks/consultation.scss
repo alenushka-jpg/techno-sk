@@ -20,7 +20,7 @@
   display: grid;
   grid-template-columns: 1fr 250px;
   column-gap: 100px;
-  padding: 54px 254px 50px 272px;
+  padding: 51px 254px 50px 272px;
   letter-spacing: -0.95px;
 
   @media (max-width: $tablet-width) {
@@ -58,8 +58,8 @@
 .consultation p {
   grid-column: 1/2;
   margin: 0;
-  font-size: 14px;
-  letter-spacing: -0.58px;
+  letter-spacing: 0.44px;
+  font-size: 13px;
   line-height: 24px;
   color: $basic-grey;
 

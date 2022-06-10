@@ -20,3 +20,28 @@ function onCloseClick() {
 
 openBurger.addEventListener('click', onBurgerClick);
 closeButton.addEventListener('click', onCloseClick);
+
+// var slides = document.querySelectorAll('#slides .slide');
+// var currentSlide = 0;
+// var slideInterval = setInterval(nextSlide, 2000);
+
+// function nextSlide(){
+//   slides[currentSlide].className = 'slide';
+
+//   for (i = 0; i < slides.length; i++) {
+//     slides[0].style.display = "none"
+//     slides[1].style.display = "none"
+//     slides[2].style.display = "none"
+//   }
+
+//   currentSlide++;
+    // if (currentSlide > slides.length) {currentSlide = 1}
+    // slides[currentSlide-1].style.display = "block";
+    // setTimeout(showSlides, 2000);
+
+  // if(currentSlide >= slides.length){
+  // currentSlide = 0;
+  // }
+  // slides[currentSlide].className = 'slide active';
+// }
+

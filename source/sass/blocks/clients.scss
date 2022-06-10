@@ -18,8 +18,9 @@
 }
 
 .clients__list {
+  position: relative;
   display: flex;
-  overflow: hidden;
+  // overflow: hidden;
   align-items: center;
   margin: 0;
   padding-left: 15px;
@@ -33,6 +34,19 @@
 
   @media (max-width: $mobile-width) {
     padding-left: 55px;
+  }
+}
+
+.clients__slides {
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 9));
   }
 }
 

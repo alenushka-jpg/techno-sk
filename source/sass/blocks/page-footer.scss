@@ -5,9 +5,9 @@
 .page-footer__container {
   display: grid;
   grid-template-columns: max-content max-content max-content 1fr;
-  column-gap: 42px;
+  column-gap: 47px;
   padding-top: 49px;
-  padding-bottom: 47px;
+  padding-bottom: 52px;
 
   @media (max-width: $tablet-width) {
     grid-template-columns: 190px 120px 1fr;
@@ -50,7 +50,7 @@
 
 .page-footer__subtitle {
   display: block;
-  margin-bottom: 4px
+  margin-bottom: 4px;
   font-size: 14px;
   line-height: 14px;
   font-weight: 700;
@@ -77,7 +77,7 @@
 
 .page-footer__text {
   margin: 0;
-  padding-left: 100px;
+  padding-left: 135px;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;

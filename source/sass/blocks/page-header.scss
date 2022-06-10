@@ -105,6 +105,8 @@
 
   @media (max-width: $mobile-width) {
     position: absolute;
+    top: 20px;
+    right: 30px;
     display: none;
     width: 230px;
     padding: 24px 30px 25px;

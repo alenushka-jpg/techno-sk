@@ -88,6 +88,14 @@
   letter-spacing: 0.44px;
   color: $basic-grey;
 
+  &:hover {
+    color: $color-button;
+  }
+
+  &:active {
+    color: $basic-grey;
+  }
+
   @media (max-width: $tablet-width) {
     font-size: 16px;
   }

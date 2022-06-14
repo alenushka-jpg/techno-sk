@@ -98,6 +98,10 @@
   box-shadow: 0 4px 20px rgba($basic-black, 0.15);
 }
 
+.consultation__form select {
+  cursor: pointer;
+}
+
 .consultation__form input:last-of-type {
   margin-bottom: 20px;
 }

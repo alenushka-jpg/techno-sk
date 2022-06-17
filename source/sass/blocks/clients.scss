@@ -61,7 +61,7 @@
 
 .clients__item {
   margin-right: 136px;
-  width: 200px;
+  // width: 200px;
   display: flex;
   align-items: center;
   perspective: 100px;
@@ -83,4 +83,8 @@
 
 .clients__item img {
   object-fit: cover;
+}
+
+.clients__item:nth-child(8) img {
+  object-fit: contain;
 }

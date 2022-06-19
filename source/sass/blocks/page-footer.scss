@@ -6,8 +6,8 @@
   display: grid;
   grid-template-columns: max-content max-content max-content 1fr;
   column-gap: 47px;
-  padding-top: 49px;
-  padding-bottom: 63px;
+  padding-top: 52px;
+  padding-bottom: 59px;
 
   @media (max-width: $tablet-width) {
     grid-template-columns: 190px 120px 1fr;
@@ -63,7 +63,7 @@
 
 .page-footer a {
   display: block;
-  font-size: 13px;
+  font-size: 16px;
   line-height: 16px;
   letter-spacing: 0.44px;
   text-decoration: none;

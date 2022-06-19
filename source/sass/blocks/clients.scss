@@ -1,10 +1,10 @@
 .clients {
   padding-top: 44px;
-  padding-bottom: 49px;
+  padding-bottom: 32px;
 }
 
 .clients h2 {
-  margin: 0 0 23px;
+  margin: 0 0 6px;
   font-size: 34px;
   line-height: 48px;
   letter-spacing: 0.25px;
@@ -49,22 +49,21 @@
   }
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
+// @keyframes scroll {
+//   0% {
+//     transform: translateX(0);
+//   }
 
-  100% {
-    transform: translateX(calc(-200px * 27));
-  }
-}
+//   100% {
+//     transform: translateX(calc(-200px * 27));
+//   }
+// }
 
 .clients__item {
   margin-right: 136px;
   // width: 200px;
   display: flex;
   align-items: center;
-  perspective: 100px;
 
   &:last-child {
     margin-right: 0;
@@ -81,8 +80,20 @@
 }
 
 
-.clients__item img {
+.clients__img {
   object-fit: cover;
+
+  &--lampa,
+  &--la-salute,
+  &--nemo,
+  &--pharaont,
+  &--razdva,
+  &--seven-fridays,
+  &--bonsai,
+  &--jazz-cafe {
+    height: 100px;
+    object-fit: contain;
+  }
 }
 
 .clients__item:nth-child(8) img {

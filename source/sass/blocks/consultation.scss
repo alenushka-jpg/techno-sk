@@ -71,8 +71,20 @@
 }
 
 .consultation__form {
+  position: relative;
   grid-column: 2/3;
   grid-row: 1/5;
+
+  &::after {
+    position: absolute;
+    top: 25px;
+    right: 16px;
+    content: '';
+    width: 12px;
+    height: 7px;
+    background-image: url('../img/svg/arrow.svg');
+    background-repeat: no-repeat;
+  }
 
   @media (max-width: $mobile-width) {
     grid-column: 1/2;
@@ -100,6 +112,7 @@
 
 .consultation__form select {
   cursor: pointer;
+  appearance: none;
 }
 
 .consultation__form input:last-of-type {

@@ -62,6 +62,7 @@
   font-size: 16px;
   line-height: 24px;
   color: $basic-grey;
+  text-size-adjust: none;
 
   @media (max-width: $mobile-width) {
     text-align: center;

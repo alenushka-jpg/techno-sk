@@ -27,13 +27,12 @@
 
 .clients__list {
   display: flex;
-  // flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   margin: 0;
   padding-left: 15px;
   padding-right: 15px;
   list-style: none;
-  animation: scroll 40s linear infinite;
 
   &:hover {
     animation-play-state: paused;
@@ -49,19 +48,8 @@
   }
 }
 
-// @keyframes scroll {
-//   0% {
-//     transform: translateX(0);
-//   }
-
-//   100% {
-//     transform: translateX(calc(-200px * 27));
-//   }
-// }
-
 .clients__item {
   margin-right: 136px;
-  // width: 200px;
   display: flex;
   align-items: center;
 
@@ -93,6 +81,20 @@
   &--jazz-cafe {
     height: 100px;
     object-fit: contain;
+  }
+
+  &--c {
+    display: none;
+  }
+}
+
+.clients__item:hover {
+  .clients__img {
+    display: none;
+  }
+
+  .clients__img--c {
+    display: block;
   }
 }
 

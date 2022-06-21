@@ -41,6 +41,11 @@ img {
   border: none;
   border-radius: 9px;
   cursor: pointer;
+
+  &:hover {
+    background-image: linear-gradient(180deg, $color-button 0%,
+    $hover-button 99.99%, $button-special 100%);
+  }
 }
 
 .visually-hidden {

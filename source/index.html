@@ -139,9 +139,11 @@
             <option value="other">Другое оборудование</option>
           </select>
           <label class="visually-hidden" for="input-name">Введите ваше имя</label>
-          <input id="input-name" type="text" minlength="1" maxlength="100" placeholder="Ваше имя" required>
+          <input id="input-name" type="text" minlength="1" maxlength="100" placeholder="Ваше имя"
+          aria-label="Поле для ввода Вашего имени" required>
           <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
-          <input type="tel" name="tel" id="tel" maxlength="11" minlength="11" pattern="\+?[0-9\s\-\(\)]+" placeholder="Ваш телефонный номер" required>
+          <input type="tel" name="tel" id="tel" maxlength="12" minlength="12" pattern="\+?[0-9\s\-\(\)]+"
+          placeholder="Ваш телефонный номер" aria-label="Поле для ввода Вашего номера телефона" required>
           <button class="button" type="submit">Перезвоните мне</button>
         </form>
       </div>

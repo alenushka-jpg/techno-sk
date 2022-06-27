@@ -41,6 +41,8 @@ img {
   border: none;
   border-radius: 9px;
   cursor: pointer;
+  transition: .6s;
+  transition-property: all;
 
   &:hover {
     background-image: linear-gradient(180deg, $color-button 0%,

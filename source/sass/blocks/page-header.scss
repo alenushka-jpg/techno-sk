@@ -88,6 +88,8 @@
   text-decoration: none;
   letter-spacing: 0.44px;
   color: $basic-grey;
+  transition: .6s;
+  transition-property: all;
 
   &:hover {
     color: $color-button;

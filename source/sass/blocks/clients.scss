@@ -1,6 +1,10 @@
 .clients {
   padding-top: 44px;
   padding-bottom: 32px;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 34px;
+  }
 }
 
 .clients h2 {
@@ -12,8 +16,9 @@
   text-align: center;
 
   @media (max-width: $tablet-width) {
-    font-size: 24px;
+    font-size: 26px;
     line-height: 140.62%;
+    text-size-adjust: none;
   }
 }
 
@@ -27,7 +32,7 @@
 
 .clients__list {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0;
   padding-left: 15px;
@@ -58,8 +63,8 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-right: 88px;
-    width: 100px;
+    margin-right: 26px;
+    width: auto;
   }
 
   @media (max-width: $mobile-width) {
@@ -85,6 +90,25 @@
 
   &--c {
     display: none;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 140px;
+    height: 80px;
+    object-fit: contain;
+  }
+
+  @media (max-width: $mobile-width) {
+    &--lampa,
+    &--la-salute,
+    &--nemo,
+    &--pharaont,
+    &--razdva,
+    &--seven-fridays,
+    &--bonsai,
+    &--jazz-cafe {
+      height: 100px;
+    }
   }
 }
 

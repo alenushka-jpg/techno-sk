@@ -4,6 +4,7 @@
 
   @media (max-width: $tablet-width) {
     padding-top: 0;
+    margin-bottom: 44px;
   }
 
   @media (max-width: $mobile-width) {
@@ -24,8 +25,13 @@
 }
 
 .description li {
+  @media (max-width: $tablet-width) {
+    width: calc(33.333% - 22px);
+  }
+
   @media (max-width: $mobile-width) {
     margin-bottom: 20px;
+    width: auto;
   }
 }
 
@@ -56,6 +62,7 @@
 
   @media (max-width: $tablet-width) {
     font-size: 20px;
+    margin-bottom: 30px;
   }
 
   @media (max-width: $mobile-width) {

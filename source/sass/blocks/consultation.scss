@@ -24,7 +24,8 @@
   letter-spacing: -0.95px;
 
   @media (max-width: $tablet-width) {
-    padding: 54px 40px 50px;
+    padding: 50px 37px 50px 40px;
+    column-gap: 92px;
   }
 
   @media (max-width: $mobile-width) {
@@ -43,6 +44,7 @@
   color: $basic-grey;
 
   @media (max-width: $tablet-width) {
+    margin-bottom: 19px;
     font-size: 24px;
     line-height: 25px;
     letter-spacing: 0.25px;
@@ -63,6 +65,11 @@
   line-height: 24px;
   color: $basic-grey;
   text-size-adjust: none;
+
+  @media (max-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 24px;
+  }
 
   @media (max-width: $mobile-width) {
     text-align: center;
@@ -109,6 +116,10 @@
   border: none;
   border-radius: 8px;
   box-shadow: 0 4px 20px rgba($basic-black, 0.15);
+
+  @media (max-width: $tablet-width) {
+    padding: 8px 17px;
+  }
 }
 
 .consultation__form select {

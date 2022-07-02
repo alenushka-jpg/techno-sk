@@ -32,7 +32,7 @@
 
 .clients__list {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   margin: 0;
   padding-left: 15px;
@@ -54,7 +54,7 @@
 }
 
 .clients__item {
-  margin-right: 136px;
+  margin-right: 75px;
   display: flex;
   align-items: center;
 
@@ -63,11 +63,12 @@
   }
 
   @media (max-width: $tablet-width) {
-    margin-right: 26px;
+    margin-right: 41px;
     width: auto;
   }
 
   @media (max-width: $mobile-width) {
+    margin-right: 29px;
     width: 200px;
   }
 }

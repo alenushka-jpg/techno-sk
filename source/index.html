@@ -388,6 +388,37 @@
         </ul>
       </div>
     </section>
+    <section class="modal modal--open">
+      <div class="modal__feedback">
+        <picture>
+          <img src="./img/man-modal.png" width="266" height="340" alt="">
+        </picture>
+        <form class="modal__form" action="" method="post">
+          <label for="type"></label>
+          <select name="type" id="type">
+            <option value="" hidden disabled selected>Тип оборудования</option>
+            <option value="cold">Холодильное оборудование</option>
+            <option value="warm">Тепловое оборудование</option>
+            <option value="mechanical">Механическое оборудование</option>
+            <option value="conditioning">Системы кондиционирования</option>
+            <option value="other">Другое оборудование</option>
+          </select>
+          <label class="visually-hidden" for="input-name">Введите ваше имя</label>
+          <input id="input-name" type="text" minlength="1" maxlength="100" placeholder="Ваше имя"
+          aria-label="Поле для ввода Вашего имени" required>
+          <label class="visually-hidden" for="tel">Введите Ваш номер телефона</label>
+          <input type="tel" name="tel" id="tel" maxlength="12" minlength="12" pattern="\+?[0-9\s\-\(\)]+"
+          placeholder="Ваш телефонный номер" aria-label="Поле для ввода Вашего номера телефона" required>
+          <button class="button" type="submit">Перезвоните мне</button>
+        </form>
+        <button class="modal__close" type="button">
+          <span class="visually-hidden">Закрыть модальное окно</span>
+          <svg width="13" height="13">
+            <use xlink:href="img/sprite_auto.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
   </main>
   <footer class="page-footer" id="contacts">
     <div class="page-footer__container container">

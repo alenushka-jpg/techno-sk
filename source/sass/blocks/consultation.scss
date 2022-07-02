@@ -98,6 +98,10 @@
     grid-column: 1/2;
     grid-row: 3/4;
     text-align: center;
+
+    &::after {
+      right: 33px;
+    }
   }
 }
 

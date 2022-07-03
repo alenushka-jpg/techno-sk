@@ -1,5 +1,8 @@
 .clients {
   padding-top: 44px;
+  padding-left: 0;
+  padding-right: 0;
+  max-width: inherit;
   padding-bottom: 32px;
 
   @media (max-width: $tablet-width) {
@@ -51,6 +54,10 @@
   @media (max-width: $mobile-width) {
     padding-left: 55px;
   }
+
+  @media (max-width: 400px) {
+    padding-left: 8px;
+  }
 }
 
 .clients__item {
@@ -68,8 +75,8 @@
   }
 
   @media (max-width: $mobile-width) {
-    margin-right: 29px;
-    width: 200px;
+    margin-right: 35px;
+    width: 140px;
   }
 }
 

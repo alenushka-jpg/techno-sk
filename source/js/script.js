@@ -3,8 +3,7 @@ const closeButton = document.querySelector('.page-header__close');
 const navigation = document.querySelector('.page-header__nav');
 const clientsSlider = document.querySelector('.clients__slider');
 
-const breakpointD = window.matchMedia('(min-width: 1440px)');
-const breakpointT = window.matchMedia('(min-width: 768px)');
+const breakpointT = window.matchMedia('(min-width: 744px)');
 let swiper;
 
 function showNavigation() {
@@ -31,35 +30,50 @@ const initSwiper = () => {
     swiper.destroy(true, true);
   }
 
-  if (breakpointD.matches) {
-    swiper = new Swiper(clientsSlider, {
-      loop: true,
-      slidesPerView: 5,
-      speed: 0,
-      disableOnInteraction: false,
-      autoplay: {
-        delay: 2000,
-      },
-    });
-  } else if (breakpointT.matches) {
+  if (breakpointT.matches) {
     swiper = new Swiper(clientsSlider, {
       loop: true,
       slidesPerView: 'auto',
-      speed: 0,
-      disableOnInteraction: false,
+      autoplay : 2,
+      speed: 700,
+      initialSlide: 0,
       autoplay: {
-        delay: 2000,
+        delay: 0,
+        disableOnInteraction: false,
       },
-    });
+
+      on: { // Приостановление листания при наведении
+        init() {
+          this.el.addEventListener('mouseenter', () => {
+            this.autoplay.stop();
+          });
+
+          this.el.addEventListener('mouseleave', () => {
+            this.autoplay.start();
+          });
+        }
+      }
+    })
   } else {
     swiper = new Swiper(clientsSlider, {
       loop: true,
       slidesPerView: 'auto',
-      speed: 0,
-      disableOnInteraction: false,
+      speed: 1030,
       autoplay: {
-        delay: 2000,
+        delay: 1000,
+        disableOnInteraction: false,
       },
+      on: { // Приостановление листания при наведении
+        init() {
+          this.el.addEventListener('mouseenter', () => {
+            this.autoplay.stop();
+          });
+
+          this.el.addEventListener('mouseleave', () => {
+            this.autoplay.start();
+          });
+        }
+      }
     });
   }
 };
@@ -67,7 +81,6 @@ const initSwiper = () => {
 const initValuesSwiper = () => {
   if (clientsSlider) {
 
-    breakpointD.addListener(initSwiper);
     breakpointT.addListener(initSwiper);
     initSwiper();
   }

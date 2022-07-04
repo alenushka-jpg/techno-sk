@@ -26,6 +26,21 @@
   background-repeat: no-repeat;
   background-color: $basic-white;
   box-shadow: 0 4px 20px rgba($basic-black, 0.25);
+
+  @media (max-width: $mobile-width) {
+    width: 350px;
+    height: 340px;
+  }
+}
+
+.modal__feedback img {
+  @media (max-width: $mobile-width) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 122px;
+    height: 107px;
+  }
 }
 
 .modal__form {
@@ -62,6 +77,11 @@
 
   @media (max-width: $tablet-width) {
     padding: 8px 17px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 251px;
+    height: 50px;
   }
 }
 

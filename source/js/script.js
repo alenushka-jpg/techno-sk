@@ -4,6 +4,7 @@ const navigation = document.querySelector('.page-header__nav');
 const clientsSlider = document.querySelector('.clients__slider');
 
 const breakpointT = window.matchMedia('(min-width: 744px)');
+const breakpointD = window.matchMedia('(min-width: 1299px)');
 let swiper;
 
 function showNavigation() {
@@ -30,7 +31,31 @@ const initSwiper = () => {
     swiper.destroy(true, true);
   }
 
-  if (breakpointT.matches) {
+  if (breakpointD.matches) {
+    swiper = new Swiper(clientsSlider, {
+      loop: true,
+      slidesPerView: 6,
+      autoplay : 2,
+      initialSlide: 0,
+      speed: 1000,
+      autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+      },
+
+      on: { // Приостановление листания при наведении
+        init() {
+          this.el.addEventListener('mouseenter', () => {
+            this.autoplay.stop();
+          });
+
+          this.el.addEventListener('mouseleave', () => {
+            this.autoplay.start();
+          });
+        }
+      }
+    })
+  } else if (breakpointT.matches) {
     swiper = new Swiper(clientsSlider, {
       loop: true,
       slidesPerView: 'auto',
@@ -38,7 +63,7 @@ const initSwiper = () => {
       speed: 700,
       initialSlide: 0,
       autoplay: {
-        delay: 0,
+        delay: 1000,
         disableOnInteraction: false,
       },
 
@@ -82,6 +107,7 @@ const initValuesSwiper = () => {
   if (clientsSlider) {
 
     breakpointT.addListener(initSwiper);
+    breakpointD.addListener(initSwiper);
     initSwiper();
   }
 };

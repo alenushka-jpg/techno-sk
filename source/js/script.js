@@ -3,6 +3,10 @@ const closeButton = document.querySelector('.page-header__close');
 const navigation = document.querySelector('.page-header__nav');
 const clientsSlider = document.querySelector('.clients__slider');
 
+const modalFeedback = document.querySelector('.modal');
+const modalClose= document.querySelector('.modal__close');
+const jsMakeRequest= document.querySelector('.js-make-request');
+
 const breakpointT = window.matchMedia('(min-width: 744px)');
 const breakpointD = window.matchMedia('(min-width: 1299px)');
 let swiper;
@@ -25,6 +29,25 @@ function onCloseClick() {
 
 openBurger.addEventListener('click', onBurgerClick);
 closeButton.addEventListener('click', onCloseClick);
+
+function showModal() {
+  modalFeedback.classList.add('modal--open');
+}
+
+function hiddenModal() {
+  modalFeedback.classList.remove('modal--open');
+}
+
+function onModalClick() {
+  showModal()
+}
+
+function onCloseModalClick() {
+  hiddenModal()
+}
+
+jsMakeRequest.addEventListener('click', onModalClick);
+modalClose.addEventListener('click', onCloseModalClick);
 
 const initSwiper = () => {
   if (swiper) {

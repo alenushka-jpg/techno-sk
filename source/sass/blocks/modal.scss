@@ -22,10 +22,10 @@
   margin: 300px auto;
   width: 618px;
   min-height: 340px;
-  background-image: url('../img/background-modal.png');
+  background-image: url("../img/background-modal.png");
   background-repeat: no-repeat;
   background-color: $basic-white;
-  box-shadow: 0px 4px 20px rgba($basic-black, 0.25);
+  box-shadow: 0 4px 20px rgba($basic-black, 0.25);
 }
 
 .modal__form {
@@ -36,13 +36,12 @@
     position: absolute;
     top: 25px;
     right: 16px;
-    content: '';
+    content: "";
     width: 12px;
     height: 7px;
-    background-image: url('../img/svg/arrow.svg');
+    background-image: url("../img/svg/arrow.svg");
     background-repeat: no-repeat;
   }
-
 }
 
 .modal__form select,

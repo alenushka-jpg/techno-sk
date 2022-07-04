@@ -88,7 +88,7 @@
   text-decoration: none;
   letter-spacing: 0.44px;
   color: $basic-grey;
-  transition: .6s;
+  transition: 0.6s;
   transition-property: all;
 
   &:hover {
@@ -122,7 +122,7 @@
     width: 230px;
     padding: 24px 30px 25px;
     background-color: $basic-grey;
-    box-shadow: 0 4px 20px rgba($basic-black, .25);
+    box-shadow: 0 4px 20px rgba($basic-black, 0.25);
     z-index: 10;
 
     &--open {

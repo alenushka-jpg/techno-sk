@@ -41,12 +41,12 @@ img {
   border: none;
   border-radius: 9px;
   cursor: pointer;
-  transition: .6s;
+  transition: 0.6s;
   transition-property: all;
 
   &:hover {
-    background-image: linear-gradient(180deg, $color-button 0%,
-    $hover-button 99.99%, $button-special 100%);
+    background-image: linear-gradient(180deg, $color-button 0%, $hover-button 100%,
+      $button-special 100%);
   }
 }
 

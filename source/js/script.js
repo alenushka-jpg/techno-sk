@@ -6,6 +6,8 @@ const clientsSlider = document.querySelector('.clients__slider');
 const modalFeedback = document.querySelector('.modal');
 const modalClose= document.querySelector('.modal__close');
 const jsMakeRequest= document.querySelector('.js-make-request');
+const overlay = document.querySelector('.overlay');
+const modalSelect = document.querySelector('.modal__select');
 
 const breakpointT = window.matchMedia('(min-width: 744px)');
 const breakpointD = window.matchMedia('(min-width: 1299px)');
@@ -38,16 +40,42 @@ function hiddenModal() {
   modalFeedback.classList.remove('modal--open');
 }
 
+function bodyHidden() {
+  document.body.style.overflow = 'hidden';
+}
+
+function bodyVisible() {
+  document.body.style.overflow = 'visible';
+}
+
 function onModalClick() {
-  showModal()
+  showModal();
+  bodyHidden();
+  modalSelect.focus();
 }
 
 function onCloseModalClick() {
-  hiddenModal()
+  hiddenModal();
+  bodyVisible();
 }
+
+if (overlay) {
+  overlay.addEventListener('click', hiddenModal);
+}
+
+overlay.addEventListener('click', bodyVisible);
 
 jsMakeRequest.addEventListener('click', onModalClick);
 modalClose.addEventListener('click', onCloseModalClick);
+
+window.addEventListener('keydown', function (evt) {
+  if (evt.keyCode === 27) {
+    if (modalFeedback.classList.contains('modal--open')) {
+      evt.preventDefault();
+      modalFeedback.classList.remove('modal--open');
+    }
+  }
+});
 
 const initSwiper = () => {
   if (swiper) {

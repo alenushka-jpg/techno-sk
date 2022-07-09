@@ -73,6 +73,7 @@ window.addEventListener('keydown', function (evt) {
     if (modalFeedback.classList.contains('modal--open')) {
       evt.preventDefault();
       modalFeedback.classList.remove('modal--open');
+      bodyVisible();
     }
   }
 });

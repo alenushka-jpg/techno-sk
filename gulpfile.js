@@ -72,6 +72,7 @@ const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/js/script.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
+  gulp.watch('source/favicon/**', gulp.series(copy, reload));
 }
 
 exports.default = gulp.series(
@@ -132,9 +133,9 @@ const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/*{.ico, webmanifest}",
-    "source/favicon/**",
     "source/img/**/*.svg",
     "!source/img/icons/*.svg",
+    "source/favicon/**",
   ], {
     base: "source"
   })
@@ -181,30 +182,3 @@ exports.default = gulp.series(
     watcher
   )
 );
-
-const syncServer = () => {
-  server.init({
-    server: 'build/',
-    index: 'sitemap.html',
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false,
-  });
-
-  gulp.watch('source/sass/**/*.{scss,sass}', gulp.series(css));
-  gulp.watch('source/js/**/*.{js,json}', gulp.series(js, refresh));
-  gulp.watch('source/data/**/*.{js,json}', gulp.series(copy, refresh));
-  gulp.watch('source/img/**/*.svg', gulp.series(copySvg, sprite, pugToHtml, refresh));
-  gulp.watch('source/img/**/*.{png,jpg,webp}', gulp.series(copyImages, pugToHtml, refresh));
-
-  gulp.watch('source/favicon/**', gulp.series(copy, refresh));
-  gulp.watch('source/video/**', gulp.series(copy, refresh));
-  gulp.watch('source/downloads/**', gulp.series(copy, refresh));
-  gulp.watch('source/*.php', gulp.series(copy, refresh));
-};
-
-const refresh = (done) => {
-  sync.reload();
-  done();
-};

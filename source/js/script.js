@@ -41,11 +41,13 @@ function hiddenModal() {
 }
 
 function bodyHidden() {
-  document.body.style.overflow = 'hidden';
+  document.body.style.overflowY = 'scroll';
+  document.body.style.position = 'fixed';
 }
 
 function bodyVisible() {
-  document.body.style.overflow = 'visible';
+  document.body.style.overflowY = 'scroll';
+  document.body.style.position = 'inherit';
 }
 
 function onModalClick() {

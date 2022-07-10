@@ -157,15 +157,15 @@ const initSwiper = () => {
   }
 };
 
-const initValuesSwiper = () => {
-  if (clientsSlider) {
+// const initValuesSwiper = () => {
+//   if (clientsSlider) {
 
-    breakpointT.addListener(initSwiper);
-    breakpointD.addListener(initSwiper);
-    initSwiper();
-  }
-};
+//     breakpointT.addListener(initSwiper);
+//     breakpointD.addListener(initSwiper);
+//     initSwiper();
+//   }
+// };
 
-window.addEventListener('DOMContentLoaded', () => {
-  initValuesSwiper();
-})
+// window.addEventListener('DOMContentLoaded', () => {
+//   initValuesSwiper();
+// })

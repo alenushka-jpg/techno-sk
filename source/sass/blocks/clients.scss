@@ -33,6 +33,22 @@
   overflow: hidden;
 }
 
+.no-js .clients__slider {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: inherit;
+}
+
+.no-js .clients__list {
+  margin: 0 auto;
+  flex-wrap: wrap;
+  max-width: 1199px;
+
+  @media (max-width: $tablet-width) {
+    max-width: 725px;
+  }
+}
+
 .clients__list {
   display: flex;
   flex-wrap: nowrap;

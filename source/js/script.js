@@ -1,3 +1,6 @@
+const noJs = document.querySelector('.no-js');
+noJs.classList.remove('no-js');
+
 const openBurger = document.querySelector('.page-header__burger');
 const closeButton = document.querySelector('.page-header__close');
 const navigation = document.querySelector('.page-header__nav');
@@ -157,15 +160,15 @@ const initSwiper = () => {
   }
 };
 
-// const initValuesSwiper = () => {
-//   if (clientsSlider) {
+const initValuesSwiper = () => {
+  if (clientsSlider) {
 
-//     breakpointT.addListener(initSwiper);
-//     breakpointD.addListener(initSwiper);
-//     initSwiper();
-//   }
-// };
+    breakpointT.addListener(initSwiper);
+    breakpointD.addListener(initSwiper);
+    initSwiper();
+  }
+};
 
-// window.addEventListener('DOMContentLoaded', () => {
-//   initValuesSwiper();
-// })
+window.addEventListener('DOMContentLoaded', () => {
+  initValuesSwiper();
+})

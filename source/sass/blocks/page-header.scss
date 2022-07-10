@@ -44,11 +44,14 @@
 }
 
 .page-header__top {
+  margin-right: 20px;
+
   @media (max-width: $mobile-width) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    margin-right: 0;
   }
 }
 

@@ -17,12 +17,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding-top: 20px;
   padding-right: 50px;
   padding-left: 25px;
   margin: 300px auto;
   width: 618px;
-  min-height: 340px;
-  background-image: url("../img/background-modal.png");
+  min-height: 360px;
+  background-image: url("../img/background-modal.jpg");
   background-repeat: no-repeat;
   background-color: $basic-white;
   box-shadow: 0 4px 20px rgba($basic-black, 0.25);

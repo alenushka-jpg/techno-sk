@@ -17,6 +17,32 @@
   }
 }
 
+.no-js {
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+  }
+}
+
+.no-js .page-header__burger,
+.no-js .page-header__close {
+  @media (max-width: $mobile-width) {
+    display: none;
+  }
+}
+.no-js .page-header__top {
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.no-js .page-header__nav {
+  @media (max-width: $mobile-width) {
+    display: flex;
+    position: static;
+    width: 100%;
+  }
+}
+
 .page-header__top {
   @media (max-width: $mobile-width) {
     display: flex;

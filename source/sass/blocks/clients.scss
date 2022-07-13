@@ -8,6 +8,10 @@
   @media (max-width: $tablet-width) {
     padding-top: 34px;
   }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 16px;
+  }
 }
 
 .clients h2 {

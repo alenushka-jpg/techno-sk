@@ -17,6 +17,10 @@
 
   @media (max-width: $mobile-width) {
     grid-template-columns: 1fr;
+    row-gap: 14px;
+    padding-top: 18px;
+    padding-right: 19px;
+    padding-bottom: 19px;
   }
 }
 
@@ -71,6 +75,14 @@
     grid-column: 1/2;
     padding-right: 0;
     font-size: 14px;
+  }
+}
+
+.page-footer__address a {
+  @media (max-width: $mobile-width) {
+    br {
+      display: none;
+    }
   }
 }
 

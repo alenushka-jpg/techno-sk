@@ -12,7 +12,9 @@
   }
 
   @media (max-width: $mobile-width) {
+    padding-top: 30px;
     padding-bottom: 28px;
+    padding-right: 30px;
     position: relative;
   }
 }

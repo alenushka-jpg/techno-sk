@@ -197,8 +197,6 @@ const sendForm = () => {
       setTimeout(() => {
         element.reset();
       }, 100);
-
-      showSuccesModal();
     });
   });
 };

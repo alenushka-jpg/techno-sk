@@ -171,4 +171,34 @@ const initValuesSwiper = () => {
 
 window.addEventListener('DOMContentLoaded', () => {
   initValuesSwiper();
-})
+});
+
+
+const sendForm = () => {
+  let regForm = document.querySelectorAll('form');
+
+  if (!regForm) return;
+
+  regForm.forEach((element) => {
+    element.addEventListener('submit', (evt) => {
+      evt.preventDefault();
+      let name = element.querySelector('input[type="text"]').value;
+      let tel = element.querySelector('input[type="tel"]').value;
+      let email = element.querySelector('input[type="email"]').value;
+
+      const xhr = new XMLHttpRequest();
+			//name и tel - переменные, которые объявляются в php
+      const body = `&name=${name} &tel=${tel} &email=${email}`;
+
+      xhr.open('POST', 'php/send-contact.php', true);
+      xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+      xhr.send(body);
+
+      setTimeout(() => {
+        element.reset();
+      }, 100);
+
+      showSuccesModal();
+    });
+  });
+};

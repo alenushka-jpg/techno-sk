@@ -19,7 +19,7 @@
   letter-spacing: -0.95px;
 
   @media (max-width: $tablet-width) {
-    padding: 50px 37px 50px 40px;
+    padding: 41px 40px 37px 40px;
     column-gap: 92px;
   }
 
@@ -117,6 +117,7 @@
   box-shadow: 0 4px 20px rgba($basic-black, 0.15);
 
   @media (max-width: $tablet-width) {
+    height: 40px;
     padding: 8px 17px;
   }
 }

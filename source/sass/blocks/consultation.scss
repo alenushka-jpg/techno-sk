@@ -1,18 +1,13 @@
 .consultation {
   min-height: 340px;
-  background-image: url("../img/consultation-bg.png");
+  background-image: url("../img/background-modal.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: $color-light-bg;
-  background-size: 1440px 340px;
+  background-size: cover;
 
   @media (max-width: $tablet-width) {
-    background-image: url("../img/consultation-bg-tablet.png");
     background-size: auto;
-  }
-
-  @media (max-width: $tablet-width) {
-    background-image: url("../img/consultation-bg-mobile.png");
   }
 }
 
